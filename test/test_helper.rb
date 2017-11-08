@@ -46,9 +46,7 @@ end
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
-
-
-include Devise::TestHelpers
+# include Devise::Test::ControllerHelpers
 
 # gives us the login_as(@user) method when request object is not present
 include Warden::Test::Helpers

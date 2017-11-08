@@ -2,7 +2,7 @@ require 'test_helper'
 
 class Opro::Oauth::TestsControllerTest < ActionController::TestCase
   tests Opro::Oauth::TestsController
-  include Devise::TestHelpers
+  include Devise::Test::ControllerHelpers
 
   setup do
     @user         = create_user
